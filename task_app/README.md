@@ -1,17 +1,97 @@
-# task_app
+# Flutter Task Management App
 
-A new Flutter project.
+A clean and structured task management mobile application built using Flutter for internship assessment.
 
-## Getting Started
+This project demonstrates:
+- UI implementation from Figma design
+- Clean architecture and folder structure
+- Reusable components
+- Basic state management
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- View today’s tasks
+- Task status indicator (Ongoing / New)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+##  Project Structure
+
+```
+lib/
+ ├── main.dart
+ ├── core/
+ │    └── colors.dart
+ ├── models/
+ │    └── tasks.dart
+ ├── data/
+ │    └── sample_task.dart
+ ├── screen/
+ │    ├── home_screen.dart
+ │    └── create_task_screen.dart
+ └── widgets/
+      └── task_card.dart
+```
+
+### Folder Explanation
+
+- **core/** - Constants and theme configuration
+- **models/** - Data models (Task)
+- **data/** - Static/mock data
+- **screen/** - UI screens
+- **widgets/** - Reusable components
+
+This structure improves maintainability and scalability.
+
+---
+
+## Reusable Component
+
+### TaskCard
+
+`TaskCard` is a reusable widget that receives a `Task` object and renders the UI dynamically.  
+This avoids duplication and keeps the code modular.
+
+---
+
+## State Management
+
+The app currently uses Flutter’s built-in state management:
+
+- StatelessWidget for static UI
+- Data passed via constructors
+- Easily extendable to Provider or Riverpod
+
+---
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sukizanii/flutter-internship-assessment.git
+   ```
+
+2. Navigate into project:
+   ```bash
+   cd flutter-internship-assessment
+   ```
+
+3. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+
+4. Run the app:
+   ```bash
+   flutter run
+   ```
+
+---
+
+## Screenshots
+
+![Home Screen](Screenshots/homepage.png)
+![Detail Screen](Screenshots/details.png)
+
