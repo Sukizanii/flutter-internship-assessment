@@ -93,5 +93,4 @@ The app currently uses Flutter’s built-in state management:
 ## Screenshots
 
 ![Home Screen](Screenshots/homepage.png)
-![Detail Screen](Screenshots/details.png)
-
+![Details Screen](Screenshots/details.png)
